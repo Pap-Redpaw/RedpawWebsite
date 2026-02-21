@@ -70,7 +70,6 @@
     }
 
     .box {
-
         border: 5px solid;
         border-color:rgb(24, 24, 24);
         border-radius: 0.5em;
@@ -82,6 +81,39 @@
         box-sizing: border-box;
         margin: 10px auto 10px;
     }
+    .updatebox {
+        color: #ffffff;
+        background-color: black;
+        text-align: center;
+        position: sticky;
+        top: 0%;
+        padding: 5px;
+
+    }
+    .entrybox {
+        border: 5px solid;
+        border-color:rgb(24, 24, 24);
+        border-radius: 0.5em;
+        color:#ffffff;
+        padding: 0 5px 5px 5px; 
+        width: 95%;
+        height: 300px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 5px auto 5px;
+        overflow: auto;
+
+    }
+    .entrydate {
+        font-size: 15px;
+        color: #B766FF;
+    }
+    .entry {
+        font-size: 10px;
+        background-color: #333333;
+        padding: 2px;
+    }
+
     .mainLanding {
         background-color:rgb(0, 0, 0);
         border: 5px solid;
