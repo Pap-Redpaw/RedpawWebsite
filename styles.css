@@ -31,7 +31,7 @@
         border-radius: 0.5em;
         color:#ffffff;
         padding: 0px 0px 0px 0px; 
-        width: 20%;
+        width: 30%;
         height:auto;
         margin-left: 5%; 
         margin-right: 2%;
@@ -46,7 +46,7 @@
         border-radius: 0.5em;
         color:#ffffff;
         padding: 0px 0px 0px 0px; 
-        width: 60%;
+        width: 80%;
         height:auto;
     /*    margin-left: 20%;
         margin-right: 20%; */
@@ -61,7 +61,7 @@
         border-radius: 0.5em;
         color:#ffffff;
         padding: 0px 0px 0px 0px; 
-        width: 20%;
+        width: 15%;
         height:auto;
         margin-left: 2%;
         margin-right: 5%;
@@ -111,7 +111,7 @@
     .entry {
         font-size: 10px;
         background-color: #333333;
-        padding: 2px;
+        padding: 1px
     }
 
     .mainLanding {
@@ -138,19 +138,20 @@
     }
 
     .navbar {
-        background-color: #333333;
+        background-color: #3a3a3a;
         padding: 10px 0px 10px 0px;
         text-align: center;
     }
 
     .navbar links {
-        color: azure;
+        color: rgb(255, 255, 255);
         padding: 5px;
+        display: block;
         
     }
 
     .navbar links:hover {
-        background-color: aqua;
+        background-image: rgb(255, 255, 255);
         color: black;
     }
 

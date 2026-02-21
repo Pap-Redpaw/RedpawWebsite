@@ -1,2 +1,44 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <title>Updates</title>
+        <link rel="stylesheet" href="styles.css"
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+<body>
+
+            <div class="mainLanding">
+                <h1>Updates</h1>
+                <div id="updates-list"></div>
+            </div>
+        <script>
+        fetch('updates.json')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('updates-list');
+                data.forEach(update => {
+                    const dateP = document.createElement('p');
+                    dateP.className = 'entrydate';
+                    dateP.style.color = 'rgb(133, 88, 255)';
+                    dateP.textContent = update.date;
+                    
+                    const titleP = document.createElement('p');
+                    titleP.textContent = update.title;
+                    
+                    const descP = document.createElement('p');
+                    descP.textContent = update.description;
+                    
+                    list.appendChild(dateP);
+                    list.appendChild(titleP);
+                    list.appendChild(descP);
+                });
+            })
+            .catch(error => console.error('Error loading updates:', error));
+        </script>
+
+</body>
