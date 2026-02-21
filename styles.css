@@ -58,7 +58,7 @@ body {
     border-radius: 0.5em;
     color:#ffffff;
     padding: 0px 0px 0px 0px; 
-    width: 15%;
+    width: 20%;
     height:auto;
     margin-left: 2%;
     margin-right: 5%;
@@ -165,16 +165,12 @@ img.animated-gif {
     padding: 10px 0;
     position: relative;
 }
-.ticker-wrapper {
-    display: flex;
-    animation: scroll 15s linear infinite;
-}
-.ticker-item {
+.ticker-text {
     white-space: nowrap;
-    padding-right: 50px; /* Space between items */
+    animation: scroll 30s linear infinite;
 }
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Moves half the width for seamless loop */
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 /* Blog Stuff */
