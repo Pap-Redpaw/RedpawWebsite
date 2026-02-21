@@ -18,20 +18,77 @@
 
     }
 
-    .main {
-
-
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
+    .left-sidebar {
+        background-color:rgb(0, 0, 0);
+        border: 5px solid;
+        border-color:rgb(24, 24, 24);
+        border-radius: 0.5em;
+        color:#ffffff;
+        padding: 0px 0px 0px 0px; 
+        width: 20%;
+        height:auto;
+        margin-left: 5%; 
+        margin-right: 2%;
+        margin-top: 5%;
+        text-align: center;
+    }
 
+    .main {
+        background-color:rgb(0, 0, 0);
+        border: 5px solid;
+        border-color:rgb(24, 24, 24);
+        border-radius: 0.5em;
+        color:#ffffff;
+        padding: 0px 0px 0px 0px; 
+        width: 60%;
+        height:auto;
+    /*    margin-left: 20%;
+        margin-right: 20%; */
+        margin-top: 5%;
+        text-align: center;
+    }
 
+    .right-sidebar {
+        background-color:rgb(0, 0, 0);
+        border: 5px solid;
+        border-color:rgb(24, 24, 24);
+        border-radius: 0.5em;
+        color:#ffffff;
+        padding: 0px 0px 0px 0px; 
+        width: 20%;
+        height:auto;
+        margin-left: 2%;
+        margin-right: 5%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .box {
+
+        border: 5px solid;
+        border-color:rgb(24, 24, 24);
+        border-radius: 0.5em;
+        color:#ffffff;
+        padding: 5px 5px 5px 5px; 
+        width: 95%;
+        height:auto;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 10px auto 10px;
+    }
     .mainLanding {
         background-color:rgb(0, 0, 0);
         border: 5px solid;
         border-color:rgb(24, 24, 24);
         border-radius: 0.5em;
         color:#ffffff;
-        padding: 0px 0px 10% 0px; 
+        padding: 0px 0px 0px 0px; 
         width: 60%;
         height:auto;
         margin-left: 20%;
@@ -65,5 +122,9 @@
         color: black;
     }
 
-
+    img.animated-gif {
+        width: 59%;
+        height: auto;
+        text-align: center;
+        }
     /* Blog Stuff */
