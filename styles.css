@@ -1,0 +1,88 @@
+/* <weight>: Use a value from 400 to 700
+ <uniquifier>: Use a unique and descriptive class name */
+
+
+body {
+    background-image: url(images/bckgrnd.gif);    
+    
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.header {
+    text-align: center;
+
+
+}
+.main {
+    background-color:whitesmoke;
+    border: 5px solid;
+    border-color:darkgrey;
+    border-radius: 5px;
+    color:#333333;
+    padding: 0px 0px 20px 0px; 
+    width: 60%;
+    height:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
+
+.mainLanding {
+    background-color:rgb(0, 0, 0);
+    border: 5px solid;
+    border-color:rgb(24, 24, 24);
+    border-radius: 0.5em;
+    color:#ffffff;
+    padding: 0px 0px 20px 0px; 
+    width: 60%;
+    height:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    text-align: center;
+}
+.mainLanding2 {
+    background-color:rgb(0, 0, 0);
+    border: 5px solid;
+    border-color:rgb(24, 24, 24);
+    border-radius: 0.5em;
+    color:#ffffff;
+    padding: 0px 0px 20px 0px; 
+    width: 60%;
+    height:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;
+    text-align: center;
+}
+.mainLandingHeadText {
+    font-size: 30px;
+}
+.mainLandingBodyText {
+    font-size: 20px;
+    padding: 50px 5px 5px 0px;
+}
+
+.navbar {
+    background-color: #333333;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.navbar links {
+    color: azure;
+    padding: 5px;
+    
+}
+
+.navbar links:hover {
+    background-color: aqua;
+    color: black;
+}
+
