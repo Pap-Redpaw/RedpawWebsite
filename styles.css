@@ -9,28 +9,20 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    
 }
 
 
 .header {
     text-align: center;
 
-
 }
+
 .main {
-    background-color:whitesmoke;
-    border: 5px solid;
-    border-color:darkgrey;
-    border-radius: 5px;
-    color:#333333;
-    padding: 0px 0px 20px 0px; 
-    width: 60%;
-    height:auto;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
+
 
 }
+
 
 
 .mainLanding {
@@ -47,20 +39,7 @@ body {
     margin-top: 5%;
     text-align: center;
 }
-.mainLanding2 {
-    background-color:rgb(0, 0, 0);
-    border: 5px solid;
-    border-color:rgb(24, 24, 24);
-    border-radius: 0.5em;
-    color:#ffffff;
-    padding: 0px 0px 20px 0px; 
-    width: 60%;
-    height:auto;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5px;
-    text-align: center;
-}
+
 .mainLandingHeadText {
     font-size: 30px;
 }
@@ -85,4 +64,31 @@ body {
     background-color: aqua;
     color: black;
 }
+.sidebar {    
+    display: flex;
+    
+    flex: 30%;
+    padding: 30px;
+}
+.sidebar right {
+    
+}
 
+.sidebar left {
+
+}
+/* Blog Stuff */
+iframe {
+    background-color:rgb(0, 0, 0);
+    border: 5px solid;
+    border-color:rgb(24, 24, 24);
+    border-radius: 0.5em;
+    color:#ffffff;
+    padding: 0px 0px 20px 0px; 
+    width: 60%;
+    height:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    text-align: center;
+}
