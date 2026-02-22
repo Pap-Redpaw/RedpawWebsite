@@ -21,20 +21,42 @@ body {
     width: 100%;
 }
 
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+}
+/* Yeah im not sorting this out into a million different sections, its just gonna be like this for now. */
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 40px;
+}
+
 .left-sidebar {
-    background-color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
     border: 5px solid;
     border-color:rgb(24, 24, 24);
     border-radius: 0.5em;
-    color:#ffffff;
-    padding: 0px 0px 0px 0px; 
     width: 30%;
     height:auto;
     margin-left: 5%; 
     margin-right: 2%;
     margin-top: 5%;
     text-align: center;
+    background-color: #000000;
 }
+
+.left-sidebar iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 
 .main {
     background-color:rgb(0, 0, 0);
@@ -43,7 +65,7 @@ body {
     border-radius: 0.5em;
     color:#ffffff;
     padding: 0px 0px 0px 0px; 
-    width: 80%;
+    width: 100%;
     height:auto;
 /*    margin-left: 20%;
     margin-right: 20%; */
@@ -58,14 +80,29 @@ body {
     border-radius: 0.5em;
     color:#ffffff;
     padding: 0px 0px 0px 0px; 
+    width: 30%;
+    height:auto;
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+.right-sidebar-hidden {
+    background-color:rgb(0, 0, 0);
+    border: 5px solid;
+    border-color:rgb(24, 24, 24);
+    border-radius: 0.5em;
+    color:#ffffff;
+    padding: 0px 0px 0px 0px; 
     width: 20%;
     height:auto;
     margin-left: 2%;
     margin-right: 5%;
     margin-top: 5%;
     text-align: center;
+    visibility: hidden;
 }
-
 .box {
     border: 5px solid;
     border-color:rgb(24, 24, 24);
@@ -77,6 +114,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     margin: 10px auto 10px;
+    
 }
 .updatebox {
     color: #ffffff;
@@ -101,10 +139,7 @@ body {
     overflow: auto;
 
 }
-.entrydate {
-    font-size: 15px;
-    color: #B766FF;
-}
+/*Ok what the FUCK do you do?*/
 .entry {
     font-size: 10px;
     background-color: #333333;
@@ -118,10 +153,10 @@ body {
     border-radius: 0.5em;
     color:#ffffff;
     padding: 0px; 
-    width: 60%;
+    width: 100%;
     height:auto;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 5%;
     text-align: center;
 }
@@ -135,20 +170,22 @@ body {
 }
 
 .navbar {
-    background-color: #3a3a3a;
+    background-image: url('../images/bckgrnd.gif');
+    margin: 10px 10px 5px 10px;
     padding: 10px 0px 10px 0px;
     text-align: center;
 }
 
-.navbar links {
-    color: rgb(255, 255, 255);
+.navbar a {
+    color: #b766ff;
     padding: 5px;
-    display: block;
-    
+    display: inline-block;
+    border: 2px dotted #ffffff;
+    background-color: #000000;
 }
 
-.navbar links:hover {
-    background-image: rgb(255, 255, 255);
+.navbar a:hover {
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
@@ -174,3 +211,62 @@ img.animated-gif {
     100% { transform: translateX(-100%); }
 }
 /* Blog Stuff */
+
+.update-title {
+    font-size: 25px;
+}
+
+.update-title-PREVIEW {
+    font-size: 17px;
+}
+.update-item {
+    margin-bottom: 20px;
+}
+
+.update-item p {
+    margin: 5px 0;
+}
+
+.update-separator {
+    border: none;
+    border-top: 5px dashed #ffffff;
+    margin: px 0;
+}
+
+.update-separator-bottom {
+    border: none;
+    border-bottom: 5px dashed #ffffff;
+    margin: px 0;
+}
+
+.entrydate {
+    font-size: 20px;
+    color: #b766ff;
+}
+.entrycontent {
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+}
+/* Blog stuff end */
+
+/* Front page stuff */
+.pronouns {
+    font-size: 23px;
+    font-weight: bold;
+    color: #b766ff;
+    padding-top: 0px;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: bold;
+    color: #b766ff;
+}
+
+.titleBeautifier {
+     border: 2px dotted #ffffff;
+    font-size: 20px;
+    color: #b766ff;
+    
+}
+

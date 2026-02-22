@@ -28,21 +28,51 @@
         <div class="container">
             <!--Left sidebar-->
             <div class="left-sidebar">
-                <div class="box">    
-                    <h2>Who am i?</h2>
+                <div class="box">
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">  <!--PLS DONT KILL ME FOR DOING IT LIKE THIS I BEG YOU IT LOOKS GOOD LIKE THIS-->
+                        Who am i?
+                        </div>
+                    </div>
                     <img class="animated-gif" src="../images/Pap licky.gif" alt="pap licky">
+                    <div class="name">Pap Redpaw</div>
+                    <div class="pronouns">❤︎ ⁠They/Them ❤︎⁠</div>
                     <p>My name is Pap Redpaw, and obviously by the name you can tell that i am a furry. </p>
                     <p>I am 23 years old, and i enjoy making content for my blog and tinkering around with both hardware and software.</p>
                     <p>My favorite games are Minecraft, and Valorant(Haven't played much recently since I switched to Linux).</p>
                 </div>
                 <div class="box">
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">
+                        My Button
+                        </div>
+                    </div>    
+                        <a href="https://redpaw.fyi"><img src="../images/PapButton.gif" alt="PapButton" title="Pap button"></a>
+                        </span><input readonly="" class="p-[4px]" value="&lt;a href=&quot;https://redpaw.fyi&quot;&gt;&lt;img src=&quot;https://redpaw.fyi/images/PapButton.gif&quot; alt=&quot;PapButton&quot; title=&quot;Pap button&quot;/&gt;&lt;/a&gt;">
+                        <button class="p-[4px] m-1 button-normal">Copy snippet</button>
+                    
+                </div>
+                <div class="box">
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">My Neighbors</div> 
+                    </div>
+                    <p>
+                        <a href="#"><img src="../images/Kazumai-button.gif" alt="Kazumai Button"></a>
+                    </p>
+                </div>
+                <div class="box">
                     <!--Buttons go here!!-->
-                    Buttons
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">Buttons</div>
+                    
+                    </div>
                     <p> 
+
                         <img src="../images/000 Y2K SPACE BUTTON.png" alt="Y2K Space Button">
-                        <a href="https://vivaldi.com"><img src="../images/anybrow.gif" alt="Any Browser Button"></a>
+                        <img src="../images/anybrow.gif" alt="Any Browser Button">
                         <a href="https://nobaraproject.org"><img src="../images/linuxnow.jpg" alt="Linux Now Button"></a>
                         <iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
+                        <a href="https://vivaldi.com"><img src="../images/vivaldi.gif" alt="Vivaldi Button"></a>
                     </p>
                 </div>
             </div>
@@ -50,7 +80,6 @@
             <div class="main">
                 <div class="navbar">
                     <div class="items">
-                        <a href="../index.html">Home</a>
                         <a href="Blogpage.html">Blog</a>
                         <a href="UpdatespageBAYBEE.html">Updates</a>
                         <a href="https://papredpaw.atabook.org">Guestbook</a>
@@ -61,12 +90,19 @@
             <!--Right sidebar-->
             <div class="right-sidebar">
                 <div class="box">
-                    Sign the Guestbook!
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">Sign the Guestbook!</div>
+                        
+                    </div>
+                    
                     <p><a href="https://papredpaw.atabook.org"><img src="../images/button-88x31 (2).gif" alt="Guestbook Button"></a></p>
                 </div>
                 <div class="entrybox">
                     <div class="updatebox">
-                        Updates
+                        <div class="titleBeautifier">
+                            <div class="titleBeautifier">Updates</div>
+                        
+                        </div>
                     </div>
                     <div class="entry">
                         <div id="updates-list"></div>
@@ -81,10 +117,14 @@
                                         dateLink.href = 'UpdatespageBAYBEE.html';
                                         dateLink.style.color = 'rgb(133, 88, 255)';
                                         dateLink.textContent = update.date;
-                                        const desc = document.createElement('p');
-                                        desc.textContent = update.title;
+                                        const titleP = document.createElement('p');
+                                        titleP.className = 'update-title-PREVIEW';
+                                        titleP.textContent = update.title;
                                         list.appendChild(dateLink);
-                                        list.appendChild(desc);
+                                        list.appendChild(titleP);
+                                        const hr = document.createElement('hr');
+                                        hr.className = 'update-separator';
+                                        list.appendChild(hr);
                                     });
                                 })
                                 .catch(error => console.error('Error loading updates:', error));
@@ -92,7 +132,11 @@
                     </div>
                 </div>
                 <div class="box">
-                        Stamps
+
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">Stamps</div>
+                        
+                    </div>
                     <p>    
                     <img src="../images/miku_tantrum_stamp_by_sky_yoshi-d49bwfw.gif" alt="Miku Stamp">
                     <img src="../images/d03ir298rutfkidj.png" alt="Trans stamp">

@@ -1,5 +1,15 @@
 [
     {
+        "date": "02/22/26 @422",
+        "title": "Designed a button! ( ˶ˆ ヮ ˆ˵ )",
+        "description": "Got Asprite and desiged my own button and one for my fiance(see the Kitsune in Neighbors)! You can also now put my button on YOUR website!( ദ്ദി ˙ᗜ˙ ) I uh... still haven't done anything with the blog... still trying to figure out a way to do that...╮(￣▽￣'')╭ "
+    },
+    {
+        "date": "02/22/26 @266",
+        "title": "Navbar FINALLY DONE",
+        "description": "Finished the navbar! Took longer that I expected (coding error in the CSS, display: inline-block; was written as display: block; and THAT DOESNT WORK FOR WHAT I WANTED. Twas an easy goof up tho. Was WAY to uncafinated last night to catch it. :P)"
+    },
+    {
         "date": "02/21/26 @349",
         "title": "Added Ticker!",
         "description": "Added a ticker to the site! You can see it at the top of the page. Split up the stickers and the stamps into two different sections. They are now on opposite sides of the page."
