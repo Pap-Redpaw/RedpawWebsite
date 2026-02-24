@@ -53,6 +53,20 @@ body {
     padding: 0px 10px 0px 10px;
 }
 
+.left-sidebar-index {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid;
+    border-color:rgb(24, 24, 24);
+    border-radius: 0.5em;
+    width: 30%;
+    height:auto;
+    margin-left: 3%; 
+    margin-right: 2%;
+    text-align: center;
+    background-color: #000000;
+    padding: 0px 10px 0px 10px;
+}
 .left-sidebar iframe {
     display: block;
     margin: 0 auto;
