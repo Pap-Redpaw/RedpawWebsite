@@ -4,65 +4,71 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <title>Pap's Blog</title>
+        <title>Home</title>
         <link rel="stylesheet" href="../styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="ticker-container">
-            <div class="ticker-text" id="ticker-text">
-                <!-- Text will be inserted here by JS -->
-            </div>
+            <!--rember these are like 88x31 pixels :3-->
+                    <marquee behavior="scroll" direction="left" scrollamount="5" style="padding: 5px;">    
+                        <img src="../images/000 Y2K SPACE BUTTON.png" alt="Y2K Space Button">
+                        <img src="../images/anybrow.gif" alt="Any Browser Button">
+                        <a href="https://nobaraproject.org"><img src="../images/linuxnow.jpg" alt="Linux Now Button"></a>
+                        <a href="https://vivaldi.com"><img src="../images/vivaldi.gif" alt="Vivaldi Button"></a>
+                        <iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
+                        <a href="https://kazumai.bandcamp.com/album/the-caf"><img src="../images/bANDCAMPsmol.gif" alt="Kazumai Button"></a>
+                        <img src="../images/nvidia.gif" alt="Nvidia Button">
+                        <img src="../images/nft.gif" alt="NO NFTS Button">
+                        <img src="../images/penguins.gif" alt="Tux Button">
+                    </marquee>
         </div>
 
-        <script>
-            const items = ["Pardon our dust, we're still working on this site!", "I need to stop sleeping @500 .beats...", "When will the website be finished??? (we don't know)"];
-            const tickerText = document.getElementById('ticker-text');
-            const separator = ' • ';
-            const fullText = items.join(separator) + separator;
-            // Repeat the text multiple times for smooth looping
-            tickerText.textContent = fullText.repeat(10);
-        </script>
 
         <div class="container">
             <!--Left sidebar-->
             <div class="left-sidebar">
-                <div class="box">
-                    <div class="titleBeautifier">
-                        <div class="titleBeautifier">  <!--PLS DONT KILL ME FOR DOING IT LIKE THIS I BEG YOU IT LOOKS GOOD LIKE THIS-->
-                        Who am i?
+                
+                    <div class="navbar">
+                        <div class="items">
+                            <div class="nav-item">
+                                <span class="icon">📝</span><a href="../Blog/index.html">Blog</a>
+                            </div>
+                            <div class="nav-item">
+                                <span class="icon">📰</span><a href="../Updates/index.html">Updates</a>
+                            </div>
+                            <div class="nav-item">
+                                <span class="icon">📖</span><a href="https://papredpaw.atabook.org">Guestbook</a>
+                            </div>
                         </div>
                     </div>
-                    <img class="animated-gif" src="../images/Pap licky.gif" alt="pap licky">
-                    <div class="name">Pap Redpaw</div>
-                    <div class="pronouns">❤︎ ⁠They/Them ❤︎⁠</div>
-                    <p>My name is Pap Redpaw, and obviously by the name you can tell that i am a furry. </p>
-                    <p>I am 23 years old, and i enjoy making content for my blog and tinkering around with both hardware and software.</p>
-                    <p>My favorite games are Minecraft, and Valorant(Haven't played much recently since I switched to Linux).</p>
-                </div>
-                <div class="box">
+
+                <img class="divider" src="../images/Divider.png" alt="Title Image" class="title-image">
                     <div class="titleBeautifier">
                         <div class="titleBeautifier">
                         My Button
                         </div>
                     </div>    
                         <a href="https://redpaw.fyi"><img src="../images/PapButton.gif" alt="PapButton" title="Pap button"></a>
-                        </span><input readonly="" class="p-[4px]" value="&lt;a href=&quot;https://redpaw.fyi&quot;&gt;&lt;img src=&quot;https://redpaw.fyi/images/PapButton.gif&quot; alt=&quot;PapButton&quot; title=&quot;Pap button&quot;/&gt;&lt;/a&gt;">
-                        <button class="p-[4px] m-1 button-normal">Copy snippet</button>
+                        <div class="button-container">
+                            <input readonly="" class="p-[4px]" value="&lt;a href=&quot;https://redpaw.fyi&quot;&gt;&lt;img src=&quot;https://redpaw.fyi/images/PapButton.gif&quot; alt=&quot;PapButton&quot; title=&quot;Pap button&quot;/&gt;&lt;/a&gt;">
+                            <button class="p-[4px] m-1 button-normal">Copy snippet</button>
+                        </div>
                     
-                </div>
-                <div class="box">
+                
+                <img class="divider" src="../images/Divider.png" alt="Title Image" class="title-image">                
                     <div class="titleBeautifier">
                         <div class="titleBeautifier">My Neighbors</div> 
                     </div>
                     <p>
                         <a href="#"><img src="../images/Kazumai-button.gif" alt="Kazumai Button"></a>
                     </p>
-                </div>
-                <div class="box">
+
+                
+                <!--<img class="divider" src="../images/Divider.png" alt="Title Image" class="title-image">-->           
                     <!--Buttons go here!!-->
-                    <div class="titleBeautifier">
+<!--                    <div class="titleBeautifier">
                         <div class="titleBeautifier">Buttons</div>
                     
                     </div>
@@ -71,32 +77,38 @@
                         <img src="../images/000 Y2K SPACE BUTTON.png" alt="Y2K Space Button">
                         <img src="../images/anybrow.gif" alt="Any Browser Button">
                         <a href="https://nobaraproject.org"><img src="../images/linuxnow.jpg" alt="Linux Now Button"></a>
-                        <iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
                         <a href="https://vivaldi.com"><img src="../images/vivaldi.gif" alt="Vivaldi Button"></a>
-                    </p>
-                </div>
+                        <iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
+
+                    </p> -->
+                
             </div>
             <!--Main Content-->
             <div class="main">
-                <div class="navbar">
-                    <div class="items">
-                        <a href="Blogpage.html">Blog</a>
-                        <a href="UpdatespageBAYBEE.html">Updates</a>
-                        <a href="https://papredpaw.atabook.org">Guestbook</a>
+
+                    <div class="titleBeautifier">
+                        <div class="titleBeautifier">  <!--PLS DONT KILL ME FOR DOING IT LIKE THIS I BEG YOU IT LOOKS GOOD LIKE THIS-->
+                            <div class="titleMain">Who am i?</div>
+                        </div>
                     </div>
-                </div>
-                <h1>You made it!!<img src="../images/eepy.gif"></h1>
+                    <img class="animated-gif" src="../images/Pap licky.gif" alt="pap licky">
+                    <div class="name">Pap Redpaw</div>
+                    <div class="pronouns">❤︎ ⁠They/Them ❤︎⁠</div>
+                    <p>My name is Pap Redpaw, and obviously by the name you can tell that i am a furry. </p>
+                    <p>I am 23 years old, and i enjoy making content for my blog and tinkering around with both hardware and software.</p>
+                    <p>My favorite games are Minecraft, and Valorant(Haven't played much recently since I switched to Linux).</p>
+                
             </div>
             <!--Right sidebar-->
             <div class="right-sidebar">
-                <div class="box">
+                <img class="divider" src="../images/Divider.png" alt="Title Image" class="title-image">                
                     <div class="titleBeautifier">
                         <div class="titleBeautifier">Sign the Guestbook!</div>
                         
                     </div>
                     
                     <p><a href="https://papredpaw.atabook.org"><img src="../images/button-88x31 (2).gif" alt="Guestbook Button"></a></p>
-                </div>
+                <img class="divider" src="../images/Divider.png" alt="Title Image" class="title-image">                
                 <div class="entrybox">
                     <div class="updatebox">
                         <div class="titleBeautifier">
@@ -131,8 +143,8 @@
                         </script>
                     </div>
                 </div>
-                <div class="box">
 
+                <img class="divider" src="../images/Divider.png" alt="Title Image" class="title-image">
                     <div class="titleBeautifier">
                         <div class="titleBeautifier">Stamps</div>
                         
@@ -143,7 +155,7 @@
                     <img src="../images/tumblr_inline_phwh896O131w0aona_500.gif" alt="I'm DIE stamp">
                     <img src="../images/tumblr_p65xsqxXBo1te4ajdo9_100.png" alt="Cringeworthy stamp">
                     </p>
-                </div>
+
             </div>
         </div>
     </body>
