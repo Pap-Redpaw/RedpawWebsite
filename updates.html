@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-        <title>Updates</title>
-        <link rel="stylesheet" href="../styles.css"
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-<body>
 
-            <div class="mainLanding">
-                    <p>
-            <div class="navbar">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <title>Updates</title>
+    <link rel="stylesheet" href="../styles.css" <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="left-sidebar-boxes">
+<iframe width="180" height="180" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-boxes">
+                <p>
+                <div class="navbar">
                     <div class="items">
-                        <a href="../Home/index.html">&lt;Back</a>
+                        <a href="../home.html">&lt;Back</a>
                     </div>
                 </div>
-<!--Yep, this is the updates code, a buncha BULLSHIT THROWN TOGETHER-->
-            </p>
+                <!--Yep, this is the updates code, a buncha BULLSHIT THROWN TOGETHER-->
+                </p>
                 <h1>Updates</h1>
                 <div id="updates-list"></div>
             </div>
-        <script>
-            
-        fetch('../updates.json') //this is the guy that handles the actual posts
-            .then(response => response.json())
-            .then(data => {
-                const list = document.getElementById('updates-list');
-                data.forEach(update => {
-                    const updateDiv = document.createElement('div');
-                    updateDiv.className = 'update-item';
-                    
-                    const titleP = document.createElement('p');
-                    titleP.className = 'update-title';          //tHIS LITTLE BITCH CONTROLS THE TITLE
-                    titleP.textContent = update.title;
-                    
-                    const dateP = document.createElement('p');
-                    dateP.className = 'entrydate';              //THIS HO CONTROLS THE MFKNN DATE
-                    dateP.style.color = 'rgb(133, 88, 255)';
-                    dateP.textContent = update.date;
-                    
-                    const descP = document.createElement('p');
-                    descP.className = 'entrycontent';           //YEP YOU GUESSED IT, THIS SLUT CONTROLS THE ACTUAL PARAGRAPH
-                    descP.textContent = update.description;
-                    
-                    updateDiv.appendChild(titleP);
-                    updateDiv.appendChild(dateP);
-                    updateDiv.appendChild(descP);
-                    
-                    const hr = document.createElement('hr');
-                    hr.className = 'update-separator-bottom';   //So this is pretty simple, it grabs the 'update-separator-bottom' and adds that funky line under each post!
-                    list.appendChild(hr);                   
-                    list.appendChild(updateDiv);
-                });
-            })
-            .catch(error => console.error('Error loading updates:', error)); //i better never see this FUCKING ERROR OR I STG
-        </script>
+            <script>
+
+                fetch('../updates.json') //this is the guy that handles the actual posts
+                    .then(response => response.json())
+                    .then(data => {
+                        const list = document.getElementById('updates-list');
+                        data.forEach(update => {
+                            const updateDiv = document.createElement('div');
+                            updateDiv.className = 'update-item';
+
+                            const titleP = document.createElement('p');
+                            titleP.className = 'update-title';          //tHIS LITTLE BITCH CONTROLS THE TITLE
+                            titleP.textContent = update.title;
+
+                            const dateP = document.createElement('p');
+                            dateP.className = 'entrydate';              //THIS HO CONTROLS THE MFKNN DATE
+                            dateP.style.color = 'rgb(133, 88, 255)';
+                            dateP.textContent = update.date;
+
+                            const descP = document.createElement('p');
+                            descP.className = 'entrycontent';           //YEP YOU GUESSED IT, THIS SLUT CONTROLS THE ACTUAL PARAGRAPH
+                            descP.textContent = update.description;
+
+                            updateDiv.appendChild(titleP);
+                            updateDiv.appendChild(dateP);
+                            updateDiv.appendChild(descP);
+
+                            const hr = document.createElement('hr');
+                            hr.className = 'update-separator-bottom';   //So this is pretty simple, it grabs the 'update-separator-bottom' and adds that funky line under each post!
+                            list.appendChild(hr);
+                            list.appendChild(updateDiv);
+                        });
+                    })
+                    .catch(error => console.error('Error loading updates:', error)); //i better never see this FUCKING ERROR OR I STG
+            </script>
+        </div>
+            <div class="right-sidebar">
+        <div class="right-sidebar-hidden"></div>
+    </div>
+    </div>
 
 </body>

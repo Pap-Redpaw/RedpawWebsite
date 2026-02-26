@@ -2,23 +2,25 @@
     <uniquifier>: Use a unique and descriptive class name */
 
 body {
-    background-image: url(images/bckgrnd.gif);    
-    
+    background-image: url(images/bckgrnd.gif);
+
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
+
 }
 
 .header {
     text-align: center;
 }
 
+
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    height: auto;
 }
 
 .container2 {
@@ -28,6 +30,7 @@ body {
     -ms-flex-align: center;
     width: 100%;
 }
+
 /* Yeah im not sorting this out into a million different sections, its just gonna be like this for now. */
 
 .center-column {
@@ -37,99 +40,104 @@ body {
     margin-top: 40px;
 }
 
+.left-sidebar-boxes {
+    border: 5px solid;
+    border-color: rgb(24, 24, 24);
+    border-radius: 0.5em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #000000;
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+
+}
+
 .left-sidebar {
     display: flex;
     flex-direction: column;
-    border: 5px solid;
-    border-color:rgb(24, 24, 24);
-    border-radius: 0.5em;
-    width: 30%;
-    height:auto;
-    margin-left: 15%; 
-    margin-right: 2%;
+    justify-content: top right;
+    width: 400px;
 
-    text-align: center;
-    background-color: #000000;
-    padding: 0px 10px 0px 10px;
+    padding-right: 10px;
 }
 
-.left-sidebar-index {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid;
-    border-color:rgb(24, 24, 24);
-    border-radius: 0.5em;
-    width: 30%;
-    height:auto;
-    margin-left: 3%; 
-    margin-right: 2%;
-    text-align: center;
-    background-color: #000000;
-    padding: 0px 10px 0px 10px;
-}
 .left-sidebar iframe {
     display: block;
     margin: 0 auto;
 }
 
-
-.main {
-    background-color:rgb(0, 0, 0);
+.main-boxes {
+    background-color: rgb(0, 0, 0);
     border: 5px solid;
-    border-color:rgb(24, 24, 24);
+    border-color: rgb(24, 24, 24);
     border-radius: 0.5em;
-    color:#ffffff;
-    padding: 0px 3% 0px 3%; 
-    width: 100%;
-    height:auto;
-/*    margin-left: 20%;
+    color: #ffffff;
+    padding: 0px 3% 0px 3%;
+    /*    margin-left: 20%;
     margin-right: 20%; */
     text-align: center;
 }
 
-.right-sidebar {
-    background-color:rgb(0, 0, 0);
-    border: 5px solid;
-    border-color:rgb(24, 24, 24);
-    border-radius: 0.5em;
-    color:#ffffff;
-    padding: 0px 10px 0px 10px; 
-    width: 30%;
-    height:auto;
-    margin-left: 2%;
-    margin-right: 15%;
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: top center;
+    justify-items: stretch;
+    width: 620px;
 
-    text-align: center;
-    
 }
-.right-sidebar-hidden {
-    background-color:rgb(0, 0, 0);
+
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: top left;
+    width: 400px;
+    padding-left: 10px;
+
+}
+
+.right-sidebar-boxes {
+    background-color: rgb(0, 0, 0);
     border: 5px solid;
-    border-color:rgb(24, 24, 24);
+    border-color: rgb(24, 24, 24);
     border-radius: 0.5em;
-    color:#ffffff;
-    padding: 0px 0px 0px 0px; 
+    color: #ffffff;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+
+}
+
+.right-sidebar-hidden {
+    background-color: rgb(0, 0, 0);
+    border: 5px solid;
+    border-color: rgb(24, 24, 24);
+    border-radius: 0.5em;
+    color: #ffffff;
+    padding: 0px 0px 0px 0px;
     width: 20%;
-    height:auto;
+    height: auto;
     margin-left: 2%;
     margin-right: 15%;
 
     text-align: center;
     visibility: hidden;
 }
+
 .box {
     border: 5px solid;
-    border-color:rgb(24, 24, 24);
+    border-color: rgb(24, 24, 24);
     border-radius: 0.5em;
-    color:#ffffff;
-    padding: 5px 5px 5px 5px; 
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
     width: 95%;
-    height:auto;
+    height: auto;
     text-align: center;
     box-sizing: border-box;
     margin: 10px auto 10px;
-    
+
 }
+
 .updatebox {
     color: #ffffff;
     background-color: black;
@@ -139,20 +147,21 @@ body {
     padding: 5px;
 
 }
+
 .entrybox {
-/*    border: 5px solid;
+    /*    border: 5px solid;
     border-color:rgb(24, 24, 24);
     border-radius: 0.5em; */
-    color:#ffffff;
-    padding: 0 5px 5px 5px; 
-    width: 95%;
+    color: #ffffff;
+    /*    padding: 0 5px 5px 5px; 
+    width: 95%;*/
     height: 300px;
     text-align: center;
-    box-sizing: border-box;
-    margin: 5px auto 5px;
+    /*    margin: 5px auto 5px;*/
     overflow: auto;
 
 }
+
 /*Ok what the FUCK do you do?*/
 .entry {
     font-size: 10px;
@@ -161,16 +170,16 @@ body {
 }
 
 .mainLanding {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     border: 5px solid;
-    border-color:rgb(24, 24, 24);
+    border-color: rgb(24, 24, 24);
     border-radius: 0.5em;
-    color:#ffffff;
-    padding: 0px 3% 0px 3%; 
+    color: #ffffff;
+    padding: 0px 3% 0px 3%;
     width: 100%;
-    height:auto;
+    height: auto;
     margin-top: 20px;
-/*    margin-left: 20%;
+    /*    margin-left: 20%;
     margin-right: 20%; */
     text-align: center;
 }
@@ -178,6 +187,7 @@ body {
 .mainLandingHeadText {
     font-size: 30px;
 }
+
 .mainLandingBodyText {
     font-size: 20px;
     padding: 50px 5px 5px 0px;
@@ -225,22 +235,23 @@ img.animated-gif {
     height: auto;
     text-align: center;
 }
+
 .ticker-container {
-    width: 100%;
-    overflow: hidden;
-    color: white;
-    font-size: 24px;
-    padding: auto;
-    position: relative;
+    padding-right: 30.5%;
+    padding-left: 30.5%;
+
 }
-.ticker-text {
-    white-space: nowrap;
-    animation: bounce 5s ease-in-out infinite alternate;
-}
+
 @keyframes bounce {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
 /* Blog Stuff */
 
 .update-title {
@@ -250,6 +261,7 @@ img.animated-gif {
 .update-title-PREVIEW {
     font-size: 17px;
 }
+
 .update-item {
     margin-bottom: 20px;
 }
@@ -274,10 +286,12 @@ img.animated-gif {
     font-size: 20px;
     color: #b766ff;
 }
+
 .entrycontent {
     font-size: 20px;
     padding: 5px 20px 5px 20px;
 }
+
 /* Blog stuff end */
 
 /* Front page stuff */
@@ -295,10 +309,10 @@ img.animated-gif {
 }
 
 .titleBeautifier {
-/*    border: 2px dotted #ffffff; */
+    /*    border: 2px dotted #ffffff; */
     font-size: 20px;
     color: #b766ff;
-    
+
 }
 
 .titleMain {
@@ -319,7 +333,7 @@ img.animated-gif {
 }
 
 .divider {
-    width: 220px;
+    width: 400px;
     height: auto;
     margin: 5px auto;
 }
