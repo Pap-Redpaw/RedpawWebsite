@@ -1,1 +1,7 @@
 Options +Multiviews
+
+# Hide .env files from HTTP access
+<FilesMatch "\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

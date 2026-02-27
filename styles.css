@@ -3,7 +3,6 @@
 
 body {
     background-image: url(images/bckgrnd.gif);
-
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -14,6 +13,7 @@ body {
 .header {
     text-align: center;
 }
+
 
 
 .container {
@@ -165,7 +165,7 @@ body {
 /*Ok what the FUCK do you do?*/
 .entry {
     font-size: 10px;
-    background-color: #333333;
+    background-color: #000000;
     padding: 1px
 }
 
@@ -227,7 +227,7 @@ body {
 
 .icon {
     margin-right: 10px;
-    font-size: 1.2em;
+    width: 20px;
 }
 
 img.animated-gif {
@@ -252,7 +252,7 @@ img.animated-gif {
     }
 }
 
-/* Blog Stuff */
+/* Update Stuff */
 
 .update-title {
     font-size: 25px;
@@ -272,7 +272,7 @@ img.animated-gif {
 
 .update-separator {
     border: none;
-    border-top: 5px dashed #ffffff;
+    border-top: 2px dashed #ffffff;
     margin: px 0;
 }
 
@@ -333,7 +333,120 @@ img.animated-gif {
 }
 
 .divider {
-    width: 400px;
+    width: auto;
     height: auto;
     margin: 5px auto;
 }
+
+/* RSS Feed */
+
+.rss-box {
+    margin: 0;
+    font-family: var(--font-main);
+}
+
+/* Feed title (your blog name) */
+.rss-title {
+    color: var(--heading-color);
+    font-size: 37px;
+    color: #b766ff;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--link-color);
+    padding-bottom: 0.5rem;
+}
+
+.rss-title a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.rss-title a:hover {
+    text-decoration: underline;
+}
+
+/* Individual post container */
+.rss-item {
+    margin-bottom: 10px;
+    padding: 1px;
+    
+
+/*    background-color: #1a1a1a;  /* Slightly lighter than your black background
+    border-radius: 8px;
+    border-left: 4px solid var(--link-color); */
+}
+
+
+
+/* Post titles */
+.rss-item a {
+    color: #b766ff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.rss-item a:hover {
+    text-decoration: underline;
+}
+
+/* Post dates */
+.rss-date {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+/* Post descriptions */
+.rss-item div {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 20px;
+        border: none;
+    border-bottom: 2px dashed #ffffff;
+}
+
+/* Links within descriptions */
+.rss-item div a {
+    display: inline;
+    font-size: 1rem;
+    color: var(--link-color);
+    
+}
+
+/* Unordered list container */
+.rss-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mute-control {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mute-control img {
+
+    border: none;
+    background: transparent;
+}
+
+/* Optional: add a subtle hover effect so users know it's clickable */
+.mute-control:hover {
+    opacity: 0.8;
+}
+
+/* Remove any default button styling if you were using a button before */
+.mute-control {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
