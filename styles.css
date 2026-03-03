@@ -56,10 +56,19 @@ body {
 .left-sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: top right;
+    justify-content: right;
     width: 400px;
-
     padding-right: 10px;
+}
+
+.left-sidebar-hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 400px;
+    padding-right: 10px;
+    text-align: center;
+    visibility: hidden;
 }
 
 .left-sidebar iframe {
@@ -82,7 +91,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: top center;
+    justify-content: center;
     justify-items: stretch;
     width: 620px;
 
@@ -91,7 +100,7 @@ body {
 .right-sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: top left;
+    justify-content: left;
     width: 400px;
     padding-left: 10px;
 
@@ -109,16 +118,11 @@ body {
 }
 
 .right-sidebar-hidden {
-    background-color: rgb(0, 0, 0);
-    border: 5px solid;
-    border-color: rgb(24, 24, 24);
-    border-radius: 0.5em;
-    color: #ffffff;
-    padding: 0px 0px 0px 0px;
-    width: 20%;
-    height: auto;
-    margin-left: 2%;
-    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 400px;
+    padding-left: 10px;
 
     text-align: center;
     visibility: hidden;
@@ -229,6 +233,12 @@ body {
     margin-right: 10px;
     width: 20px;
 }
+.icon2 {
+    margin-right: 10px;
+    width: 30px;
+
+}
+
 
 img.animated-gif {
     width: 20%;
@@ -368,9 +378,9 @@ img.animated-gif {
 .rss-item {
     margin-bottom: 10px;
     padding: 1px;
-    
 
-/*    background-color: #1a1a1a;  /* Slightly lighter than your black background
+
+    /*    background-color: #1a1a1a;  /* Slightly lighter than your black background
     border-radius: 8px;
     border-left: 4px solid var(--link-color); */
 }
@@ -404,7 +414,7 @@ img.animated-gif {
     color: var(--text-color);
     line-height: 1.6;
     font-size: 20px;
-        border: none;
+    border: none;
     border-bottom: 2px dashed #ffffff;
 }
 
@@ -413,7 +423,7 @@ img.animated-gif {
     display: inline;
     font-size: 1rem;
     color: var(--link-color);
-    
+
 }
 
 /* Unordered list container */
@@ -449,4 +459,3 @@ img.animated-gif {
     padding: 0;
     margin: 0;
 }
-

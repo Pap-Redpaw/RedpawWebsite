@@ -12,8 +12,7 @@
         <div id="c_widget"></div>
         <script src="comment-widget.js"></script>
 https://docs.google.com/spreadsheets/d/1wmtYUjpNdoHT2A4Vb7WIcUiR6Qo4yvuxOtsjguw5oBo/edit?usp=sharing
-https://docs.google.com/forms/d/e/1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw/viewform?usp=pp_url&entry.1972564476=name&entry.117023816=web&entry.1103100741=text&entry.301381465=page&entry.1830128265=reply    Have fun! Bug reports are encouraged if you happen to run into any issues.
-    - Ayano (https://virtualobserver.moe/)
+https://docs.google.com/forms/d/e/1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw/viewform?usp=pp_url&entry.1972564476=Name&entry.117023816=Website&entry.1103100741=Text&entry.301381465=Page&entry.1830128265=Reply&entry.106188886=Admin    - Ayano (https://virtualobserver.moe/)
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
@@ -22,9 +21,11 @@ const s_formId = '1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw';
 const s_nameId = '1972564476';
 const s_websiteId = '117023816';
 const s_textId = '1103100741';
+const s_adminId = '106188886'
 const s_pageId = '301381465';
 const s_replyId = '1830128265';
 const s_sheetId = '1wmtYUjpNdoHT2A4Vb7WIcUiR6Qo4yvuxOtsjguw5oBo';
+
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -47,7 +48,7 @@ const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make
 const s_wordFilterOn = false; // True for on, false for off
 const s_filterReplacement = '****'; // Change what filtered words are censored with (**** is the default)
 const s_filteredWords = [ // Add words to filter by putting them in quotes and separating with commas (ie. 'heck', 'dang')
-    'heck', 'dang'
+    'fuck', 'shit', 'bitch'
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
@@ -105,6 +106,7 @@ const v_formHtml = `
     <div id="c_textWrapper" class="c-inputWrapper">
         <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
         <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50"  maxlength="${s_maxLength}" required></textarea>
+        <input name="entry.${s_adminId}" id="entry.${s_adminId}" type="hidden" readonly value="false">
     </div>
 
     <input id="c_submitButton" name="c_submitButton" type="submit" value="${s_submitButtonLabel}" disabled>
@@ -374,6 +376,7 @@ function createComment(data) {
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
+    if(data.Admin == true) {name.insertAdjacentHTML('beforeend', "<span class='adminmark'>[Admin]</span>");}
     comment.appendChild(name);
 
     // Timestamp
