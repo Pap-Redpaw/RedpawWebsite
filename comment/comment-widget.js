@@ -12,7 +12,7 @@
         <div id="c_widget"></div>
         <script src="comment-widget.js"></script>
 https://docs.google.com/spreadsheets/d/1wmtYUjpNdoHT2A4Vb7WIcUiR6Qo4yvuxOtsjguw5oBo/edit?usp=sharing
-https://docs.google.com/forms/d/e/1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw/viewform?usp=pp_url&entry.1972564476=Name&entry.117023816=Website&entry.1103100741=Text&entry.301381465=Page&entry.1830128265=Reply&entry.106188886=false*/
+https://docs.google.com/forms/d/e/1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw/viewform?usp=pp_url&entry.1972564476=Pap&entry.117023816=redpaw.fyi&entry.1103100741=blabla&entry.301381465=/comments.html&entry.1830128265=noreply&entry.777731833=false&entry.106188886=false*/
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
 const s_stylePath = 'styles.css';
@@ -20,6 +20,7 @@ const s_formId = '1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw';
 const s_nameId = '1972564476';
 const s_websiteId = '117023816';
 const s_textId = '1103100741';
+const s_moderatedId = '777731833'; // The Moderated field ID
 const s_adminId = '106188886';
 const s_pageId = '301381465';
 const s_replyId = '1830128265';
@@ -105,6 +106,7 @@ const v_formHtml = `
     <div id="c_textWrapper" class="c-inputWrapper">
         <label class="c-label c-textLabel" for="entry.${s_textId}">${s_textFieldLabel}</label>
         <textarea class="c-input c-textInput" name="entry.${s_textId}" id="entry.${s_textId}" rows="4" cols="50"  maxlength="${s_maxLength}" required></textarea>
+        <input name="entry.${s_moderatedId}" id="entry.${s_moderatedId}" type="hidden" readonly value="false">
         <input name="entry.${s_adminId}" id="entry.${s_adminId}" type="hidden" readonly value="false">
     </div>
 
@@ -375,9 +377,12 @@ function createComment(data) {
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
-    if(data.Admin == true) {
+    if(data.Moderated == false) {
+    name.innerText = 'Guest'; // Change 'Guest' to whatever you want
+}
+    if  (data.Admin == true) {
     name.insertAdjacentHTML('beforeend', " <span class='adminmark'>[Admin]</span> ");
-    }
+}
     comment.appendChild(name);
 
     // Timestamp
@@ -392,6 +397,9 @@ function createComment(data) {
         site.innerText = s_websiteText;
         site.href = data.Website;
         site.className = 'c-site';
+        if(data.Moderated == false) {
+    site.innerText = '';
+}
         comment.appendChild(site);
     }
 
@@ -401,6 +409,9 @@ function createComment(data) {
     if (s_wordFilterOn) {filteredText = filteredText.replace(v_filteredWords, s_filterReplacement)}
     text.innerText = filteredText;
     text.className = 'c-text';
+    if(data.Moderated == false) {
+    text.innerText = 'This comment is awaiting moderation'; // Change this value to whatever you want
+}
     comment.appendChild(text);
     
     return comment;
