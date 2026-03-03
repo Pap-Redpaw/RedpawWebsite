@@ -12,8 +12,7 @@
         <div id="c_widget"></div>
         <script src="comment-widget.js"></script>
 https://docs.google.com/spreadsheets/d/1wmtYUjpNdoHT2A4Vb7WIcUiR6Qo4yvuxOtsjguw5oBo/edit?usp=sharing
-https://docs.google.com/forms/d/e/1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw/viewform?usp=pp_url&entry.1972564476=Name&entry.117023816=Website&entry.1103100741=Text&entry.301381465=Page&entry.1830128265=Reply&entry.106188886=Admin    - Ayano (https://virtualobserver.moe/)
-*/
+https://docs.google.com/forms/d/e/1FAIpQLSddZfEAVbDuRwvkGA-O_u5Wr_cezf1u89NyhGMV54Ru4ZAwiw/viewform?usp=pp_url&entry.1972564476=Name&entry.117023816=Website&entry.1103100741=Text&entry.301381465=Page&entry.1830128265=Reply&entry.106188886=false*/
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
 const s_stylePath = 'styles.css';
@@ -376,7 +375,9 @@ function createComment(data) {
     if (s_wordFilterOn) {filteredName = filteredName.replace(v_filteredWords, s_filterReplacement)}
     name.innerText = filteredName;
     name.className = 'c-name';
-    if(data.Admin == true) {name.insertAdjacentHTML('beforeend', "<span class='adminmark'>[Admin]</span>");}
+    if(data.Admin == true) {
+    name.insertAdjacentHTML('beforeend', " <span class='adminmark'>[Admin]</span> ");
+    }
     comment.appendChild(name);
 
     // Timestamp
